@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+        />
+        <title>Stopwatch</title>
+        <style>
+            body {
+                background: linear-gradient(
+                    to right,
+                    hsl(200, 100%, 50%),
+                    hsl(175, 100%, 50%)
+                );
+            }
+            .main-container {
+                height: 1vh;
+            }
+            .timer-container {
+                margin-top: 20px;
+                padding-bottom: 20px;
+                background-color: aqua;
+                max-width: 400px;
+            }
+
+            .time-display {
+                font-size: 50px;
+                font-family: consolas, monospace;
+            }
+
+            .timer-button {
+                margin-top: 10px;
+                font-family: consolas, monospace;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: auto;
+                width: 100vw;
+                font-family: consolas, monospace;
+                color: rgb(45, 45, 136);
+            }
+
+            .footer-bottom {
+                background: aqua;
+                width: 100vw;
+                padding: 3px;
+                text-align: center;
+            }
+            .footer-bottom p {
+                font-size: 16px;
+                word-spacing: 2px;
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container main-container">
+            <div
+                class="timer-container container border border-light border-2 rounded text-center"
+            >
+                <div class="time-display" id="timeDisplay">00:00:00</div>
+                <button class="btn btn-success timer-button" id="startBtn">
+                    Start
+                </button>
+                <button class="btn btn-secondary timer-button" id="pauseBtn">
+                    Pause
+                </button>
+                <button class="btn btn-danger timer-button" id="resetBtn">
+                    Reset
+                </button>
+            </div>
+            <footer>
+                <div class="footer-bottom">
+                    <p>copyright &copy;2023. Designed by Faudhya</p>
+                </div>
+            </footer>
+            <!-- script -->
+            <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
